@@ -166,7 +166,7 @@
         
         $email  = preg_replace( "/\r|\n/", "", $files );        //Change text to array
         array_splice($email,$no,1);                             //Delete registered gmail
-        $gmail = implode("\n", $email);                         //Change array to text
+        $gmail  = implode("\n", $email);                         //Change array to text
 
         $file   = fopen($file_gmail,"w");
         fwrite($file,$gmail);                                   //Save New data
